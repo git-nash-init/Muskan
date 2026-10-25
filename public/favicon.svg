@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="128" fill="#0a0a0a"/>
+  <!-- Modern Geometric Neon M Icon for MUSKAN -->
+  <path d="M 120 392 L 120 120 L 210 120 L 256 240 L 302 120 L 392 120 L 392 392 L 328 392 L 328 220 L 276 348 L 236 348 L 184 220 L 184 392 Z" fill="#6dee17"/>
+  <!-- Ambient subtle inner glow dot -->
+  <circle cx="256" cy="392" r="12" fill="#6dee17" opacity="0.9" />
+</svg>
