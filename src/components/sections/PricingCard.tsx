@@ -28,7 +28,7 @@ export const PricingCard: React.FC<PricingCardProps> = ({ onJoinClick }) => {
         </div>
 
         {/* Singular Transparent Pricing Card */}
-        <div className="max-w-2xl mx-auto rounded-3xl bg-canvas-surface border border-accent/40 p-8 sm:p-12 relative shadow-[0_0_50px_rgba(255,73,37,0.12)]">
+        <div className="max-w-2xl mx-auto rounded-3xl bg-canvas-surface border border-accent/40 p-8 sm:p-12 relative shadow-[0_0_50px_rgba(109,238,23,0.15)]">
           {/* Top Pill: Recommended / Official */}
           <div className="absolute -top-3.5 left-1/2 -translate-x-1/2">
             <span className="px-4 py-1 rounded-full bg-accent text-black text-xs font-bold uppercase tracking-widest shadow-md">
@@ -84,7 +84,7 @@ export const PricingCard: React.FC<PricingCardProps> = ({ onJoinClick }) => {
               size="lg"
               onClick={onJoinClick}
               icon={<ArrowUpRight className="w-4 h-4" />}
-              className="w-full text-sm sm:text-base py-4 font-semibold shadow-[0_0_30px_rgba(255,73,37,0.3)]"
+              className="w-full text-sm sm:text-base py-4 font-semibold shadow-[0_0_30px_rgba(109,238,23,0.3)]"
             >
               Get Telegram Access — {FORMATTED_PRICE}
             </Button>

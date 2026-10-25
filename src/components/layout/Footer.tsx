@@ -198,7 +198,7 @@ export const Footer = ({ onNavigatePage }: FooterProps) => {
         </div>
       </div>
 
-      {/* Signature Full-Width Vermilion Orange Banner (Signature element from reference) */}
+      {/* Signature Full-Width Neon Green Accent Banner */}
       <div className="w-full bg-accent text-black py-12 sm:py-20 px-4 sm:px-8 overflow-hidden select-none">
         <div className="max-w-[1400px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="w-full sm:w-auto">

@@ -18,7 +18,7 @@ export function PhotoGallery({ onViewMore, onCheckout }: PhotoGalleryProps) {
     'tile-festive': 0,
     'tile-traditional': 0,
     'tile-outdoor': 0,
-    'tile-travel': 0,
+    'tile-portrait': 0,
   });
 
   const [lightboxItem, setLightboxItem] = useState<MediaItem | null>(null);
@@ -68,7 +68,7 @@ export function PhotoGallery({ onViewMore, onCheckout }: PhotoGalleryProps) {
           {/* Header */}
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
             <div>
-              <p className="text-xs tracking-[0.25em] text-[#ff4925] font-mono mb-3">
+              <p className="text-xs tracking-[0.25em] text-[#6dee17] font-mono mb-3">
                 (PHOTO ARCHIVE)&nbsp;<span className="text-white/40">•</span>&nbsp;{GALLERY_ITEMS.length} EXCLUSIVE PREVIEWS
               </p>
               <h2 className="font-display text-[clamp(2.4rem,6vw,5.5rem)] font-black uppercase tracking-tight text-white leading-none">
@@ -88,7 +88,7 @@ export function PhotoGallery({ onViewMore, onCheckout }: PhotoGalleryProps) {
               </div>
               <button
                 onClick={onViewMore}
-                className="text-xs font-mono text-[#ff4925] hover:text-[#ff6b4a] underline tracking-widest uppercase transition-colors self-start sm:self-auto"
+                className="text-xs font-mono text-[#6dee17] hover:text-[#89f244] underline tracking-widest uppercase transition-colors self-start sm:self-auto font-semibold"
               >
                 View Full Archive ({GALLERY_ITEMS.length}) →
               </button>
@@ -105,7 +105,7 @@ export function PhotoGallery({ onViewMore, onCheckout }: PhotoGalleryProps) {
               return (
                 <div
                   key={tile.id}
-                  className="bg-white/[0.03] border border-white/10 rounded-2xl overflow-hidden flex flex-col group transition-all duration-300 hover:border-white/20 hover:shadow-2xl hover:shadow-[#ff4925]/5"
+                  className="bg-white/[0.03] border border-white/10 rounded-2xl overflow-hidden flex flex-col group transition-all duration-300 hover:border-white/20 hover:shadow-2xl hover:shadow-[#6dee17]/10"
                 >
                   {/* Image Display Container */}
                   <div
@@ -135,7 +135,7 @@ export function PhotoGallery({ onViewMore, onCheckout }: PhotoGalleryProps) {
                       <span className="font-mono text-[10px] tracking-widest text-white/80 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded-md border border-white/10">
                         {tile.tag}
                       </span>
-                      <span className="font-mono text-[10px] tracking-widest uppercase text-white bg-[#ff4925] px-2.5 py-1 rounded-md font-bold">
+                      <span className="font-mono text-[10px] tracking-widest uppercase text-black bg-[#6dee17] px-2.5 py-1 rounded-md font-bold shadow-sm">
                         {currentImage.category}
                       </span>
                     </div>
@@ -175,7 +175,7 @@ export function PhotoGallery({ onViewMore, onCheckout }: PhotoGalleryProps) {
                   <div className="p-4 bg-black/40 border-t border-white/8 flex flex-col gap-3">
                     <div className="flex items-center justify-between text-xs font-mono">
                       <span className="text-white/40 tracking-wider text-[11px]">SELECT OPTION:</span>
-                      <span className="text-[#ff4925] font-semibold text-[11px]">
+                      <span className="text-[#6dee17] font-bold text-[11px]">
                         {activeIdx + 1} / {totalImages}
                       </span>
                     </div>
@@ -188,7 +188,7 @@ export function PhotoGallery({ onViewMore, onCheckout }: PhotoGalleryProps) {
                           onClick={(e) => setTileOption(tile.id, oIdx, e)}
                           className={`px-2.5 py-1 rounded text-[11px] font-mono tracking-wider transition-all duration-200 border ${
                             activeIdx === oIdx
-                              ? 'bg-[#ff4925] text-white border-[#ff4925] font-bold shadow-sm'
+                              ? 'bg-[#6dee17] text-black border-[#6dee17] font-bold shadow-sm'
                               : 'bg-white/5 border-white/10 text-white/60 hover:text-white hover:bg-white/10 hover:border-white/25'
                           }`}
                           aria-label={`Switch to option ${oIdx + 1}: ${img.title}`}
@@ -211,7 +211,7 @@ export function PhotoGallery({ onViewMore, onCheckout }: PhotoGalleryProps) {
           {/* After 4 tiles: Option to View More + Direct Checkout Button */}
           <div className="bg-gradient-to-r from-white/[0.04] via-white/[0.02] to-white/[0.04] border border-white/12 rounded-3xl p-8 sm:p-10 flex flex-col lg:flex-row items-center justify-between gap-6 shadow-2xl">
             <div className="text-center lg:text-left">
-              <span className="font-mono text-xs tracking-[0.25em] text-[#ff4925] uppercase">
+              <span className="font-mono text-xs tracking-[0.25em] text-[#6dee17] uppercase font-bold">
                 COMPLETE VAULT ARCHIVE
               </span>
               <h3 className="text-2xl sm:text-3xl font-display font-black uppercase text-white mt-2">
@@ -228,10 +228,10 @@ export function PhotoGallery({ onViewMore, onCheckout }: PhotoGalleryProps) {
               <button
                 onClick={onViewMore}
                 id="view-more-gallery-btn"
-                className="group relative inline-flex items-center justify-center gap-3 bg-white/10 hover:bg-white/15 border border-white/25 hover:border-[#ff4925] px-8 py-4 rounded-full text-white font-mono text-xs tracking-widest uppercase transition-all duration-300 shadow-md"
+                className="group relative inline-flex items-center justify-center gap-3 bg-white/10 hover:bg-white/15 border border-white/25 hover:border-[#6dee17] px-8 py-4 rounded-full text-white font-mono text-xs tracking-widest uppercase transition-all duration-300 shadow-md"
               >
                 <span>VIEW ALL CAPTURED MOMENTS ({GALLERY_ITEMS.length})</span>
-                <svg className="w-4 h-4 text-[#ff4925] transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <svg className="w-4 h-4 text-[#6dee17] transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </button>
@@ -240,10 +240,10 @@ export function PhotoGallery({ onViewMore, onCheckout }: PhotoGalleryProps) {
               <button
                 onClick={onCheckout}
                 id="gallery-checkout-btn"
-                className="inline-flex items-center justify-center gap-2 bg-[#ff4925] hover:bg-[#e03e1e] text-white px-8 py-4 rounded-full font-mono text-xs tracking-widest uppercase transition-all duration-300 font-bold shadow-lg shadow-[#ff4925]/20 hover:scale-[1.02]"
+                className="inline-flex items-center justify-center gap-2 bg-[#6dee17] hover:bg-[#58c710] text-black px-8 py-4 rounded-full font-mono text-xs tracking-widest uppercase transition-all duration-300 font-bold shadow-lg shadow-[#6dee17]/25 hover:scale-[1.02]"
               >
                 <span>CHAT WITH ME — {SITE_METADATA.pricing.formatted}</span>
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <svg className="w-4 h-4 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
               </button>
@@ -278,7 +278,7 @@ export function PhotoGallery({ onViewMore, onCheckout }: PhotoGalleryProps) {
               className="max-h-[75vh] w-auto object-contain rounded-2xl shadow-2xl"
             />
             <div className="mt-4 text-center">
-              <span className="font-mono text-xs tracking-widest text-[#ff4925] uppercase">
+              <span className="font-mono text-xs tracking-widest text-[#6dee17] uppercase font-bold">
                 {lightboxItem.category}
               </span>
               <p className="text-white font-semibold text-base mt-1">{lightboxItem.title}</p>
@@ -300,7 +300,7 @@ export function PhotoGallery({ onViewMore, onCheckout }: PhotoGalleryProps) {
                     setLightboxItem(null);
                     onCheckout();
                   }}
-                  className="bg-[#ff4925] text-white px-5 py-2 rounded-full text-xs font-mono tracking-widest uppercase hover:bg-[#e03e1e]"
+                  className="bg-[#6dee17] text-black font-bold px-5 py-2 rounded-full text-xs font-mono tracking-widest uppercase hover:bg-[#58c710] shadow-md shadow-[#6dee17]/20"
                 >
                   Unlock Full HD Vault
                 </button>

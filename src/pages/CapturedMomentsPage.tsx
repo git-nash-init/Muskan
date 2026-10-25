@@ -1,6 +1,6 @@
 import { useState, useMemo, useEffect, useCallback } from 'react';
 import { GALLERY_ITEMS, GALLERY_CATEGORIES, MediaItem } from '../config/media';
-import { SITE_METADATA } from '../config/site';
+import { SITE_METADATA, BRAND_NAME } from '../config/site';
 
 interface CapturedMomentsPageProps {
   onBack: () => void;
@@ -82,9 +82,9 @@ export function CapturedMomentsPage({ onBack, onCheckout }: CapturedMomentsPageP
             <span className="text-white/20 hidden sm:inline">|</span>
             <button
               onClick={onBack}
-              className="text-white font-display text-lg font-black tracking-tight hidden sm:block hover:text-[#ff4925] transition-colors"
+              className="text-white font-display text-lg font-black tracking-tight hidden sm:block hover:text-[#6dee17] transition-colors"
             >
-              NAYRA<span className="text-[#ff4925]">•</span>
+              {BRAND_NAME}<span className="text-[#6dee17]">•</span>
             </button>
           </div>
 
@@ -95,10 +95,10 @@ export function CapturedMomentsPage({ onBack, onCheckout }: CapturedMomentsPageP
             <button
               onClick={onCheckout}
               id="gallery-top-checkout-btn"
-              className="bg-[#ff4925] text-white px-5 py-2 rounded-full text-xs font-mono tracking-widest uppercase hover:bg-[#e03e1e] transition-all font-bold shadow-md shadow-[#ff4925]/20 flex items-center gap-1.5"
+              className="bg-[#6dee17] text-black px-5 py-2 rounded-full text-xs font-mono tracking-widest uppercase hover:bg-[#58c710] transition-all font-bold shadow-md shadow-[#6dee17]/25 flex items-center gap-1.5"
             >
               <span>CHAT WITH ME — {SITE_METADATA.pricing.formatted}</span>
-              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <svg className="w-3.5 h-3.5 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
             </button>
@@ -111,30 +111,30 @@ export function CapturedMomentsPage({ onBack, onCheckout }: CapturedMomentsPageP
         {/* Page Hero Header */}
         <div className="border-b border-white/8 py-16 px-4 sm:px-8 lg:px-16 bg-gradient-to-b from-white/[0.03] to-transparent">
           <div className="max-w-[1440px] mx-auto">
-            <div className="flex flex-wrap items-center gap-2 text-xs font-mono tracking-[0.25em] text-[#ff4925] uppercase mb-4">
-              <span>NAYRA OFFICIAL ARCHIVE</span>
+            <div className="flex flex-wrap items-center gap-2 text-xs font-mono tracking-[0.25em] text-[#6dee17] uppercase mb-4 font-bold">
+              <span>{BRAND_NAME} OFFICIAL ARCHIVE</span>
               <span className="text-white/30">•</span>
               <span>ALL {GALLERY_ITEMS.length} PHOTO PREVIEWS</span>
               <span className="text-white/30">•</span>
-              <span>2 EXCLUSIVE VIDEO REELS</span>
+              <span>3 EXCLUSIVE VIDEO REELS</span>
             </div>
 
             <h1 className="font-display text-[clamp(2.8rem,8vw,6.5rem)] font-black uppercase tracking-tight text-white leading-none">
-              CAPTURED <span className="text-[#ff4925]">MOMENTS</span>
+              CAPTURED <span className="text-[#6dee17]">MOMENTS</span>
             </h1>
 
             <p className="text-white/60 text-sm sm:text-base max-w-2xl mt-5 leading-relaxed font-sans">
-              Explore the entire public collection of preview stills from Nayra's shoots, travels, festive celebrations, and candid daily life.
+              Explore the entire public collection of preview stills from Muskan's shoots, travels, festive celebrations, and candid daily life.
               To unlock full uncompressed high-resolution albums, private raw videos, and 1-on-1 direct messaging, join the private Telegram channel.
             </p>
 
             <div className="mt-6 flex flex-wrap items-center gap-4">
               <button
                 onClick={onCheckout}
-                className="inline-flex items-center gap-2 bg-[#ff4925] hover:bg-[#e03e1e] text-white px-6 py-3 rounded-full font-mono text-xs tracking-widest uppercase transition-all font-bold shadow-md"
+                className="inline-flex items-center gap-2 bg-[#6dee17] hover:bg-[#58c710] text-black px-6 py-3 rounded-full font-mono text-xs tracking-widest uppercase transition-all font-bold shadow-md shadow-[#6dee17]/25"
               >
                 <span>UNLOCK ENTIRE HD VAULT — {SITE_METADATA.pricing.formatted}</span>
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <svg className="w-4 h-4 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
               </button>
@@ -155,14 +155,14 @@ export function CapturedMomentsPage({ onBack, onCheckout }: CapturedMomentsPageP
                   onClick={() => setActiveFilter(cat)}
                   className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-mono tracking-widest uppercase transition-all duration-200 border ${
                     activeFilter === cat
-                      ? 'bg-[#ff4925] text-white border-[#ff4925] font-bold shadow-md shadow-[#ff4925]/20'
+                      ? 'bg-[#6dee17] text-black border-[#6dee17] font-bold shadow-md shadow-[#6dee17]/20'
                       : 'border-white/12 text-white/60 hover:text-white hover:border-white/30 bg-white/[0.02]'
                   }`}
                 >
                   <span>{cat}</span>
                   <span
-                    className={`text-[10px] px-1.5 py-0.5 rounded-full font-mono ${
-                      activeFilter === cat ? 'bg-white/20 text-white' : 'bg-white/10 text-white/50'
+                    className={`text-[10px] px-1.5 py-0.5 rounded-full font-mono font-bold ${
+                      activeFilter === cat ? 'bg-black/20 text-black' : 'bg-white/10 text-white/50'
                     }`}
                   >
                     {categoryCount(cat)}
@@ -189,7 +189,7 @@ export function CapturedMomentsPage({ onBack, onCheckout }: CapturedMomentsPageP
                 <div
                   key={item.id}
                   onClick={() => openLightbox(item, idx)}
-                  className="group relative w-full overflow-hidden rounded-2xl bg-white/5 border border-white/10 hover:border-white/30 cursor-pointer break-inside-avoid mb-4 block transition-all duration-300 hover:shadow-xl hover:shadow-[#ff4925]/10"
+                  className="group relative w-full overflow-hidden rounded-2xl bg-white/5 border border-white/10 hover:border-white/30 cursor-pointer break-inside-avoid mb-4 block transition-all duration-300 hover:shadow-xl hover:shadow-[#6dee17]/10"
                   role="button"
                   tabIndex={0}
                   aria-label={`Open ${item.title}`}
@@ -212,7 +212,7 @@ export function CapturedMomentsPage({ onBack, onCheckout }: CapturedMomentsPageP
                     <span className="font-mono text-[10px] tracking-widest text-white/80 bg-black/60 px-2 py-0.5 rounded backdrop-blur-sm border border-white/10">
                       #{String(idx + 1).padStart(2, '0')}
                     </span>
-                    <span className="font-mono text-[10px] tracking-widest uppercase text-white bg-[#ff4925] px-2 py-0.5 rounded font-bold shadow-sm">
+                    <span className="font-mono text-[10px] tracking-widest uppercase text-black bg-[#6dee17] px-2 py-0.5 rounded font-bold shadow-sm">
                       {item.category}
                     </span>
                   </div>
@@ -242,26 +242,26 @@ export function CapturedMomentsPage({ onBack, onCheckout }: CapturedMomentsPageP
         </div>
 
         {/* ── Section-Level CTA Banner ───────────────────────────────────── */}
-        <section className="border-t border-white/10 py-20 px-4 sm:px-8 text-center bg-gradient-to-b from-transparent via-[#ff4925]/5 to-transparent">
+        <section className="border-t border-white/10 py-20 px-4 sm:px-8 text-center bg-gradient-to-b from-transparent via-[#6dee17]/5 to-transparent">
           <div className="max-w-2xl mx-auto">
-            <p className="text-xs font-mono tracking-[0.25em] text-[#ff4925] uppercase mb-3">
+            <p className="text-xs font-mono tracking-[0.25em] text-[#6dee17] uppercase mb-3 font-bold">
               PREVIEW ONLY • 100% EXCLUSIVE TELEGRAM VAULT
             </p>
             <h2 className="font-display text-3xl sm:text-5xl font-black uppercase text-white mb-5 leading-tight">
               Ready for the uncompressed experience?
             </h2>
             <p className="text-white/60 text-sm sm:text-base mb-8 leading-relaxed">
-              Every photo in this archive is only a preview. In Nayra's private Telegram channel, members receive full uncompressed HD photo drops,
+              Every photo in this archive is only a preview. In Muskan's private Telegram channel, members receive full uncompressed HD photo drops,
               raw behind-the-scenes video reels, voice notes, and real-time private 1-on-1 chats.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <button
                 onClick={onCheckout}
                 id="gallery-bottom-cta-checkout"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#ff4925] hover:bg-[#e03e1e] text-white px-9 py-4 rounded-full font-mono text-xs tracking-widest uppercase transition-all font-bold shadow-lg shadow-[#ff4925]/25 hover:scale-105"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#6dee17] hover:bg-[#58c710] text-black px-9 py-4 rounded-full font-mono text-xs tracking-widest uppercase transition-all font-bold shadow-lg shadow-[#6dee17]/25 hover:scale-105"
               >
                 <span>JOIN PRIVATE CHAT — {SITE_METADATA.pricing.formatted}</span>
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <svg className="w-4 h-4 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
               </button>
@@ -284,7 +284,7 @@ export function CapturedMomentsPage({ onBack, onCheckout }: CapturedMomentsPageP
         <div className="max-w-[1440px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="text-center sm:text-left">
             <p className="text-white font-semibold text-xs sm:text-sm">
-              Unlock the <span className="text-[#ff4925]">full uncompressed albums</span> &amp; chat with Nayra
+              Unlock the <span className="text-[#6dee17]">full uncompressed albums</span> &amp; chat with Muskan
             </p>
             <p className="text-white/50 text-[11px] font-mono mt-0.5">
               One-time payment of {SITE_METADATA.pricing.formatted} · Instant invitation delivered
@@ -293,10 +293,10 @@ export function CapturedMomentsPage({ onBack, onCheckout }: CapturedMomentsPageP
           <button
             onClick={onCheckout}
             id="gallery-sticky-checkout-btn"
-            className="w-full sm:w-auto shrink-0 bg-[#ff4925] hover:bg-[#e03e1e] text-white px-7 py-2.5 rounded-full font-mono text-xs tracking-widest uppercase transition-all font-bold shadow-md shadow-[#ff4925]/25 flex items-center justify-center gap-2"
+            className="w-full sm:w-auto shrink-0 bg-[#6dee17] hover:bg-[#58c710] text-black px-7 py-2.5 rounded-full font-mono text-xs tracking-widest uppercase transition-all font-bold shadow-md shadow-[#6dee17]/25 flex items-center justify-center gap-2"
           >
             <span>JOIN FOR {SITE_METADATA.pricing.formatted}</span>
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <svg className="w-4 h-4 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </button>
@@ -350,7 +350,7 @@ export function CapturedMomentsPage({ onBack, onCheckout }: CapturedMomentsPageP
               className="max-h-[75vh] w-auto object-contain rounded-2xl shadow-2xl"
             />
             <div className="mt-4 text-center">
-              <span className="font-mono text-xs tracking-widest text-[#ff4925] uppercase font-bold">
+              <span className="font-mono text-xs tracking-widest text-[#6dee17] uppercase font-bold">
                 {lightbox.category}
               </span>
               <p className="text-white font-semibold text-lg mt-1">{lightbox.title}</p>
@@ -366,7 +366,7 @@ export function CapturedMomentsPage({ onBack, onCheckout }: CapturedMomentsPageP
                     setLightbox(null);
                     onCheckout();
                   }}
-                  className="bg-[#ff4925] hover:bg-[#e03e1e] text-white px-4 py-1.5 rounded-full text-[11px] font-mono tracking-widest uppercase transition-colors"
+                  className="bg-[#6dee17] hover:bg-[#58c710] text-black font-bold px-4 py-1.5 rounded-full text-[11px] font-mono tracking-widest uppercase transition-colors shadow-sm"
                 >
                   Unlock Full HD Vault
                 </button>

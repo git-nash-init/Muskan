@@ -1,6 +1,6 @@
 /**
- * Media Registry for NAYRA Official Website
- * ALL 31 model-1 photographs + 2 video reels.
+ * Media Registry for MUSKAN Official Website
+ * ALL 33 model-2 photographs + 3 video reels.
  */
 
 export interface MediaItem {
@@ -17,16 +17,16 @@ export interface MediaItem {
 
 export const HERO_MEDIA = {
   main: {
-    src: '/media/images/nayra-hero-portrait.jpg',
-    alt: 'NAYRA dramatic editorial portrait with dark background',
-    width: 1440,
-    height: 1469,
+    src: '/media/images/muskan-hero-portrait.jpg',
+    alt: 'MUSKAN dramatic editorial portrait with dark background',
+    width: 3072,
+    height: 4096,
   },
   about: {
-    src: '/media/images/nayra-about-featured.jpg',
-    alt: 'Nayra smiling warmly, natural and approachable',
-    width: 1440,
-    height: 1800,
+    src: '/media/images/muskan-about-featured.jpg',
+    alt: 'Muskan smiling warmly, natural and approachable',
+    width: 3072,
+    height: 4096,
   },
 };
 
@@ -35,18 +35,19 @@ export const FEATURED_VIDEOS: MediaItem[] = [
     id: 'video-reel-01',
     title: 'Daily Unfiltered Moments',
     category: 'Video Reel',
-    src: '/media/videos/nayra-video-reel-01.mp4',
-    poster: '/media/images/nayra-video-poster-01.jpg',
+    src: '/media/videos/muskan-video-reel-01.mp4',
+    poster: '/media/images/muskan-video-poster-01.jpg',
     type: 'video',
     aspectRatio: '9/16',
+    hasAudio: true,
     description: 'Behind-the-scenes candid moments, quick greetings, and daily vlog previews.',
   },
   {
     id: 'video-reel-02',
     title: 'Private Stories & Moods',
     category: 'Exclusive Clip',
-    src: '/media/videos/nayra-video-reel-02.mp4',
-    poster: '/media/images/nayra-video-poster-02.jpg',
+    src: '/media/videos/muskan-video-reel-02.mp4',
+    poster: '/media/images/muskan-video-poster-02.jpg',
     type: 'video',
     aspectRatio: '9/16',
     hasAudio: true,
@@ -56,294 +57,313 @@ export const FEATURED_VIDEOS: MediaItem[] = [
     id: 'video-reel-03',
     title: 'Candid Studio & Moods',
     category: 'Behind The Scenes',
-    src: '/media/videos/nayra-video-reel-03.mp4',
-    poster: '/media/images/nayra-preview-03-sage-elegance.jpg',
+    src: '/media/videos/muskan-video-reel-03.mp4',
+    poster: '/media/images/muskan-video-poster-03.jpg',
     type: 'video',
     aspectRatio: '9/16',
+    hasAudio: true,
     description: 'Special studio clips, festive celebrations, and candid real-time updates.',
   },
 ];
 
-// ALL 31 images from model-1 folder represented in the gallery archive
+// ALL 33 images from model-2 folder represented in the gallery archive
 export const GALLERY_ITEMS: MediaItem[] = [
   {
     id: 'gallery-01',
-    title: 'Golden Hour Jewels',
-    category: 'Traditional',
-    src: '/media/images/nayra-preview-01-golden-hour.jpg',
+    title: 'Golden Hour Radiance',
+    category: 'Outdoor',
+    src: '/media/images/muskan-vault-01.jpg',
     type: 'image',
     aspectRatio: '4/5',
-    description: 'Intricate gold maang tikka and statement earrings under warm evening light.',
+    description: 'Soft natural sunlight and warm outdoor glow.',
   },
   {
     id: 'gallery-02',
-    title: 'Festive Pink Grace',
-    category: 'Festive',
-    src: '/media/images/nayra-preview-02-festive-yellow.jpg',
+    title: 'Sunlit Terrace Glance',
+    category: 'Outdoor',
+    src: '/media/images/muskan-vault-02.jpg',
     type: 'image',
     aspectRatio: '4/5',
-    description: 'Vibrant pink ethnic attire with delicate gold jewellery.',
+    description: 'Candid terrace moments with subtle city breeze.',
   },
   {
     id: 'gallery-03',
-    title: 'Sage Elegance',
+    title: 'Dusk Serenity',
     category: 'Outdoor',
-    src: '/media/images/nayra-preview-03-sage-elegance.jpg',
+    src: '/media/images/muskan-vault-03.jpg',
     type: 'image',
     aspectRatio: '4/5',
-    description: 'Graceful embroidered dupatta under a soft city dusk sky.',
+    description: 'Serene expression against a soft evening dusk.',
   },
   {
     id: 'gallery-04',
-    title: 'Dark Floral Portrait',
-    category: 'Traditional',
-    src: '/media/images/nayra-preview-04-midnight-chic.jpg',
+    title: 'Intimate Warmth',
+    category: 'Portrait',
+    src: '/media/images/muskan-vault-04.jpg',
     type: 'image',
     aspectRatio: '4/5',
-    description: 'Deep midnight blue traditional suit with delicate silver details.',
+    description: 'Close-up studio warmth with expressive gaze.',
   },
   {
     id: 'gallery-05',
-    title: 'Mountain Escape',
-    category: 'Travel',
-    src: '/media/images/nayra-preview-05-mountain-retreat.jpg',
+    title: 'Festive Crimson Grace',
+    category: 'Festive',
+    src: '/media/images/muskan-vault-05.jpg',
     type: 'image',
-    aspectRatio: '4/5',
-    description: 'High-altitude scenic escape surrounded by lush alpine pines.',
+    aspectRatio: '3/4',
+    description: 'Traditional elegance in rich festive attire.',
   },
   {
     id: 'gallery-06',
-    title: 'Morning Light',
-    category: 'Casual',
-    src: '/media/images/nayra-preview-06-cafe-morning.jpg',
+    title: 'Crimson Radiance',
+    category: 'Festive',
+    src: '/media/images/muskan-vault-06.jpg',
     type: 'image',
     aspectRatio: '3/4',
-    description: 'Candid morning light and effortless everyday charm.',
+    description: 'Delicate ethnic details with joyful charm.',
   },
   {
     id: 'gallery-07',
-    title: 'Rose Gold Shimmer',
+    title: 'Midnight Velvet',
     category: 'Traditional',
-    src: '/media/images/nayra-preview-07-rose-gold.jpg',
+    src: '/media/images/muskan-vault-07.jpg',
     type: 'image',
     aspectRatio: '4/5',
-    description: 'Intricate maang tikka, statement earrings, and soft rose palette.',
+    description: 'Moody editorial lighting in dark ethnic styling.',
   },
   {
     id: 'gallery-08',
-    title: 'Winter Warmth',
-    category: 'Portrait',
-    src: '/media/images/nayra-preview-08-winter-glow.jpg',
+    title: 'Urban Chic Look',
+    category: 'Candid',
+    src: '/media/images/muskan-vault-08.jpg',
     type: 'image',
-    aspectRatio: '4/5',
-    description: 'Cosy winter jacket, rosy cheeks, and a natural direct gaze.',
+    aspectRatio: '3/4',
+    description: 'Effortless street style with clean modern lines.',
   },
   {
     id: 'gallery-09',
-    title: 'Waterfall Journey',
-    category: 'Travel',
-    src: '/media/images/nayra-preview-09-waterfall-journey.jpg',
+    title: 'Coffee Break Laugh',
+    category: 'Candid',
+    src: '/media/images/muskan-vault-09.jpg',
     type: 'image',
-    aspectRatio: '4/5',
-    description: 'Rushing mountain stream and fresh wild mountain air.',
+    aspectRatio: '3/4',
+    description: 'Unposed candid smile in cosy indoor setting.',
   },
   {
     id: 'gallery-10',
-    title: 'Sunny Day Candid',
-    category: 'Outdoor',
-    src: '/media/images/nayra-preview-10-outdoor-sunshine.jpg',
+    title: 'Minimalist Tone',
+    category: 'Portrait',
+    src: '/media/images/muskan-vault-10.jpg',
     type: 'image',
-    aspectRatio: '4/5',
-    description: 'Denim jacket and candid outdoor park smile.',
+    aspectRatio: '3/4',
+    description: 'Clean composition focusing on natural beauty.',
   },
   {
     id: 'gallery-11',
-    title: 'Rooftop Dusk',
+    title: 'Terrace Sunset Mood',
     category: 'Outdoor',
-    src: '/media/images/nayra-preview-11-sunset-balcony.jpg',
+    src: '/media/images/muskan-vault-11.jpg',
     type: 'image',
     aspectRatio: '4/5',
-    description: 'Warm breeze overlooking city skyline at dusk.',
+    description: 'Warm sunset light falling across terrace rails.',
   },
   {
     id: 'gallery-12',
-    title: 'Festive Bangles',
-    category: 'Festive',
-    src: '/media/images/nayra-preview-12-festive-joy.jpg',
+    title: 'Casual Everyday Glow',
+    category: 'Candid',
+    src: '/media/images/muskan-vault-12.jpg',
     type: 'image',
-    aspectRatio: '4/5',
-    description: 'Traditional glass bangles, joyous celebration, vibrant yellow.',
+    aspectRatio: '3/4',
+    description: 'Relaxed daytime mood and genuine warmth.',
   },
   {
     id: 'gallery-13',
-    title: 'Editorial Hero Portrait',
+    title: 'Editorial Shadow Play',
     category: 'Portrait',
-    src: '/media/images/nayra-hero-portrait.jpg',
+    src: '/media/images/muskan-vault-13.jpg',
     type: 'image',
-    aspectRatio: '4/5',
-    description: 'Dramatic chiaroscuro editorial studio close-up portrait.',
+    aspectRatio: '3/4',
+    description: 'Dramatic cinematic shadow play and poise.',
   },
   {
     id: 'gallery-14',
-    title: 'Approach Warmth',
-    category: 'Portrait',
-    src: '/media/images/nayra-about-featured.jpg',
+    title: 'City Reflections',
+    category: 'Travel',
+    src: '/media/images/muskan-vault-14.jpg',
     type: 'image',
-    aspectRatio: '4/5',
-    description: 'Warm and personal smiling portrait in white knit wear.',
+    aspectRatio: '3/4',
+    description: 'Exploring quiet city corners at twilight.',
   },
   {
     id: 'gallery-15',
-    title: 'Golden Sunset Studio',
-    category: 'Portrait',
-    src: '/media/images/nayra-video-poster-01.jpg',
+    title: 'Evening Skyline',
+    category: 'Travel',
+    src: '/media/images/muskan-vault-15.jpg',
     type: 'image',
-    aspectRatio: '4/5',
-    description: 'Terrace golden hour lighting and intimate serene gaze.',
+    aspectRatio: '3/4',
+    description: 'Panoramic skyline backdrop under dusky skies.',
   },
   {
     id: 'gallery-16',
-    title: 'Striped Blinds Mood',
-    category: 'Portrait',
-    src: '/media/images/nayra-video-poster-02.jpg',
+    title: 'Rose Garden Bloom',
+    category: 'Traditional',
+    src: '/media/images/muskan-vault-16.jpg',
     type: 'image',
-    aspectRatio: '4/5',
-    description: 'Sensory interior lighting with subtle stripe shadow patterns.',
+    aspectRatio: '3/4',
+    description: 'Ornate floral embroidery and delicate jewelry.',
   },
   {
     id: 'gallery-17',
-    title: 'Winter Selfie',
+    title: 'High-Key Studio Glow',
     category: 'Portrait',
-    src: '/media/images/nayra-extra-15.jpg',
+    src: '/media/images/muskan-vault-17.jpg',
     type: 'image',
-    aspectRatio: '4/5',
-    description: 'Natural indoor selfie in a cosy puffer jacket.',
+    aspectRatio: '3/4',
+    description: 'Bright luminous studio lighting and pure gaze.',
   },
   {
     id: 'gallery-18',
-    title: 'Mehndi Yellow Elegance',
-    category: 'Festive',
-    src: '/media/images/nayra-extra-16.jpg',
+    title: 'Traditional Heritage',
+    category: 'Traditional',
+    src: '/media/images/muskan-vault-18.jpg',
     type: 'image',
-    aspectRatio: '4/5',
-    description: 'Vibrant yellow salwar with gold bangles and fresh mehndi.',
+    aspectRatio: '3/4',
+    description: 'Timeless cultural grace with ornate craftsmanship.',
   },
   {
     id: 'gallery-19',
-    title: 'Garden Charm',
-    category: 'Traditional',
-    src: '/media/images/nayra-extra-17.jpg',
+    title: 'Warm Gentle Smile',
+    category: 'Portrait',
+    src: '/media/images/muskan-vault-19.jpg',
     type: 'image',
-    aspectRatio: '4/5',
-    description: 'Dark embroidered floral suit with ornate bangles, garden backdrop.',
+    aspectRatio: '3/4',
+    description: 'Gentle natural smile radiating quiet confidence.',
   },
   {
     id: 'gallery-20',
-    title: 'Soft Morning Glow',
-    category: 'Portrait',
-    src: '/media/images/nayra-extra-18.jpg',
+    title: 'Festive Gold Shimmer',
+    category: 'Festive',
+    src: '/media/images/muskan-vault-20.jpg',
     type: 'image',
-    aspectRatio: '4/5',
-    description: 'Luminous natural morning skin in a cosy puffer jacket.',
+    aspectRatio: '3/4',
+    description: 'Shimmering festive details for celebration.',
   },
   {
     id: 'gallery-21',
-    title: 'Waterfall Flannel',
-    category: 'Travel',
-    src: '/media/images/nayra-extra-19.jpg',
+    title: 'Candid Laugh',
+    category: 'Candid',
+    src: '/media/images/muskan-vault-21.jpg',
     type: 'image',
-    aspectRatio: '4/5',
-    description: 'Orange plaid flannel at a roaring mountain waterfall.',
+    aspectRatio: '3/4',
+    description: 'In-between moments and real genuine laughter.',
   },
   {
     id: 'gallery-22',
-    title: 'Golden Drape',
+    title: 'Celebration Day',
     category: 'Festive',
-    src: '/media/images/nayra-extra-20.jpg',
+    src: '/media/images/muskan-vault-22.jpg',
     type: 'image',
-    aspectRatio: '4/5',
-    description: 'Back-view drape of embroidered yellow dupatta, chandelier earrings.',
+    aspectRatio: '3/4',
+    description: 'Vibrant ceremonial energy and rich fabrics.',
   },
   {
     id: 'gallery-23',
-    title: 'Mehndi Gaze',
+    title: 'Festive Aura',
     category: 'Festive',
-    src: '/media/images/nayra-extra-21.jpg',
+    src: '/media/images/muskan-vault-23.jpg',
     type: 'image',
-    aspectRatio: '4/5',
-    description: 'Festive mehndi hands, kaleere, and a playful over-the-shoulder look.',
+    aspectRatio: '3/4',
+    description: 'Radiant celebration atmosphere and classic jewelry.',
   },
   {
     id: 'gallery-24',
-    title: 'Mint Sunset Smile',
-    category: 'Outdoor',
-    src: '/media/images/nayra-extra-22.jpg',
+    title: 'Ethnic Elegance',
+    category: 'Traditional',
+    src: '/media/images/muskan-vault-24.jpg',
     type: 'image',
-    aspectRatio: '4/5',
-    description: 'Mint green embroidered suit glowing in rooftop golden hour.',
+    aspectRatio: '3/4',
+    description: 'Regal ethnic silhouette with intricate accents.',
   },
   {
     id: 'gallery-25',
-    title: 'Yellow Back Grace',
-    category: 'Festive',
-    src: '/media/images/nayra-extra-23.jpg',
+    title: 'Golden Twilight Glow',
+    category: 'Outdoor',
+    src: '/media/images/muskan-vault-25.jpg',
     type: 'image',
-    aspectRatio: '4/5',
-    description: 'Elegant back-pose in yellow embroidered suit with gold jhumkas.',
+    aspectRatio: '3/4',
+    description: 'Deep golden hour light illuminating candid elegance.',
   },
   {
     id: 'gallery-26',
-    title: 'Garden Floral Blossom',
-    category: 'Traditional',
-    src: '/media/images/nayra-extra-24.jpg',
+    title: 'Festive Radiance',
+    category: 'Festive',
+    src: '/media/images/muskan-vault-26.jpg',
     type: 'image',
-    aspectRatio: '4/5',
-    description: 'Smiling portrait in dark floral print suit among garden blooms.',
+    aspectRatio: '3/4',
+    description: 'Joyous festive celebration portrait.',
   },
   {
     id: 'gallery-27',
-    title: 'Mint Rooftop Joy',
-    category: 'Outdoor',
-    src: '/media/images/nayra-extra-25.jpg',
+    title: 'Moody Editorial Depth',
+    category: 'Portrait',
+    src: '/media/images/muskan-vault-27.jpg',
     type: 'image',
-    aspectRatio: '4/5',
-    description: 'Joyful rooftop moment in embroidered mint suit at sunset.',
+    aspectRatio: '3/4',
+    description: 'Dark dramatic editorial composition.',
   },
   {
     id: 'gallery-28',
-    title: 'Mint Laugh Candid',
-    category: 'Outdoor',
-    src: '/media/images/nayra-extra-26.jpg',
+    title: 'Signature Gaze',
+    category: 'Portrait',
+    src: '/media/images/muskan-vault-28.jpg',
     type: 'image',
-    aspectRatio: '4/5',
-    description: 'Candid joyful laughter in a mint green embroidered dupatta suit.',
+    aspectRatio: '3/4',
+    description: 'Direct compelling gaze with refined minimalism.',
   },
   {
     id: 'gallery-29',
-    title: 'Haldi Celebration',
-    category: 'Festive',
-    src: '/media/images/nayra-extra-27.jpg',
+    title: 'Classic Charm',
+    category: 'Traditional',
+    src: '/media/images/muskan-vault-29.jpg',
     type: 'image',
-    aspectRatio: '4/5',
-    description: 'Haldi ceremony energy — yellow suit, mehndi, marigold decor.',
+    aspectRatio: '3/4',
+    description: 'Understated elegance in ethnic attire.',
   },
   {
     id: 'gallery-30',
-    title: 'Kashmir Meadows',
-    category: 'Travel',
-    src: '/media/images/nayra-extra-28.jpg',
+    title: 'Quiet Confidence',
+    category: 'Portrait',
+    src: '/media/images/muskan-vault-30.jpg',
     type: 'image',
-    aspectRatio: '4/5',
-    description: 'Breathtaking Kashmir alpine meadow in black embroidered ensemble.',
+    aspectRatio: '3/4',
+    description: 'Poised and serene portrait in ambient natural light.',
   },
   {
     id: 'gallery-31',
-    title: 'Cafe Candidly',
-    category: 'Casual',
-    src: '/media/images/nayra-extra-29.jpg',
+    title: 'Evening Atmosphere',
+    category: 'Travel',
+    src: '/media/images/muskan-vault-31.jpg',
     type: 'image',
-    aspectRatio: '4/5',
-    description: 'Raw, unposed cafe selfie in a white tee — just being real.',
+    aspectRatio: '3/4',
+    description: 'Capturing atmospheric evening moods on the go.',
+  },
+  {
+    id: 'gallery-32',
+    title: 'Sun-Kissed Silhouette',
+    category: 'Outdoor',
+    src: '/media/images/muskan-vault-32.jpg',
+    type: 'image',
+    aspectRatio: '3/4',
+    description: 'Warm sun rays framing a delicate silhouette.',
+  },
+  {
+    id: 'gallery-33',
+    title: 'Authentic Unfiltered',
+    category: 'Candid',
+    src: '/media/images/muskan-vault-33.jpg',
+    type: 'image',
+    aspectRatio: '3/4',
+    description: '100% natural, unedited, candid real-life capture.',
   },
 ];
 
@@ -354,7 +374,7 @@ export const GALLERY_CATEGORIES = [
   'Outdoor',
   'Travel',
   'Portrait',
-  'Casual',
+  'Candid',
 ];
 
 /**
@@ -376,13 +396,12 @@ export const HOMEPAGE_GALLERY_TILES: GalleryTileCollection[] = [
     category: 'Festive',
     tag: '01 / CELEBRATION',
     images: [
-      GALLERY_ITEMS[1],  // Festive Pink Grace
-      GALLERY_ITEMS[11], // Festive Bangles
-      GALLERY_ITEMS[17], // Mehndi Yellow
-      GALLERY_ITEMS[21], // Golden Drape
-      GALLERY_ITEMS[22], // Mehndi Gaze
-      GALLERY_ITEMS[24], // Yellow Back Grace
-      GALLERY_ITEMS[28], // Haldi Celebration
+      GALLERY_ITEMS[4],  // Festive Crimson Grace
+      GALLERY_ITEMS[5],  // Crimson Radiance
+      GALLERY_ITEMS[19], // Festive Gold Shimmer
+      GALLERY_ITEMS[21], // Celebration Day
+      GALLERY_ITEMS[22], // Festive Aura
+      GALLERY_ITEMS[25], // Festive Radiance
     ],
   },
   {
@@ -391,40 +410,42 @@ export const HOMEPAGE_GALLERY_TILES: GalleryTileCollection[] = [
     category: 'Traditional',
     tag: '02 / HERITAGE',
     images: [
-      GALLERY_ITEMS[0],  // Golden Hour Jewels
-      GALLERY_ITEMS[3],  // Dark Floral Portrait
-      GALLERY_ITEMS[6],  // Rose Gold Shimmer
-      GALLERY_ITEMS[18], // Garden Charm
-      GALLERY_ITEMS[25], // Garden Floral Blossom
+      GALLERY_ITEMS[6],  // Midnight Velvet
+      GALLERY_ITEMS[15], // Rose Garden Bloom
+      GALLERY_ITEMS[17], // Traditional Heritage
+      GALLERY_ITEMS[23], // Ethnic Elegance
+      GALLERY_ITEMS[28], // Classic Charm
     ],
   },
   {
     id: 'tile-outdoor',
-    themeTitle: 'GOLDEN HOUR & ROOFTOP',
+    themeTitle: 'GOLDEN HOUR & OUTDOOR',
     category: 'Outdoor',
     tag: '03 / GOLDEN HOUR',
     images: [
-      GALLERY_ITEMS[2],  // Sage Elegance
-      GALLERY_ITEMS[10], // Rooftop Dusk
-      GALLERY_ITEMS[23], // Mint Sunset Smile
-      GALLERY_ITEMS[26], // Mint Rooftop Joy
-      GALLERY_ITEMS[27], // Mint Laugh Candid
-      GALLERY_ITEMS[9],  // Sunny Day Candid
+      GALLERY_ITEMS[0],  // Golden Hour Radiance
+      GALLERY_ITEMS[1],  // Sunlit Terrace Glance
+      GALLERY_ITEMS[2],  // Dusk Serenity
+      GALLERY_ITEMS[10], // Terrace Sunset Mood
+      GALLERY_ITEMS[24], // Golden Twilight Glow
+      GALLERY_ITEMS[31], // Sun-Kissed Silhouette
     ],
   },
   {
-    id: 'tile-travel',
-    themeTitle: 'TRAVEL & UNFILTERED',
-    category: 'Travel',
+    id: 'tile-portrait',
+    themeTitle: 'PORTRAIT & CANDID',
+    category: 'Portrait',
     tag: '04 / UNFILTERED',
     images: [
-      GALLERY_ITEMS[4],  // Mountain Escape
-      GALLERY_ITEMS[8],  // Waterfall Journey
-      GALLERY_ITEMS[29], // Kashmir Meadows
-      GALLERY_ITEMS[20], // Waterfall Flannel
-      GALLERY_ITEMS[5],  // Morning Light
-      GALLERY_ITEMS[30], // Cafe Candidly
-      GALLERY_ITEMS[7],  // Winter Warmth
+      GALLERY_ITEMS[3],  // Intimate Warmth
+      GALLERY_ITEMS[9],  // Minimalist Tone
+      GALLERY_ITEMS[12], // Editorial Shadow Play
+      GALLERY_ITEMS[16], // High-Key Studio Glow
+      GALLERY_ITEMS[18], // Warm Gentle Smile
+      GALLERY_ITEMS[26], // Moody Editorial Depth
+      GALLERY_ITEMS[27], // Signature Gaze
+      GALLERY_ITEMS[29], // Quiet Confidence
+      GALLERY_ITEMS[32], // Authentic Unfiltered
     ],
   },
 ];

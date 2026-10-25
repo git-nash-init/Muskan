@@ -14,10 +14,10 @@ export default {
           subtle: '#222222',
         },
         accent: {
-          DEFAULT: '#ff4925',
-          hover: '#bd2608',
-          glow: 'rgba(255, 73, 37, 0.25)',
-          subtle: 'rgba(255, 73, 37, 0.08)',
+          DEFAULT: '#6dee17',
+          hover: '#58c710',
+          glow: 'rgba(109, 238, 23, 0.25)',
+          subtle: 'rgba(109, 238, 23, 0.08)',
         },
         muted: {
           light: '#cacaca',

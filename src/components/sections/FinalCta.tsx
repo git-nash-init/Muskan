@@ -32,7 +32,7 @@ export const FinalCta: React.FC<FinalCtaProps> = ({ onJoinClick }) => {
             size="lg"
             onClick={onJoinClick}
             icon={<ArrowUpRight className="w-4 h-4" />}
-            className="text-base px-10 py-4 shadow-[0_0_35px_rgba(255,73,37,0.35)]"
+            className="text-base px-10 py-4 shadow-[0_0_35px_rgba(109,238,23,0.35)]"
           >
             Chat with me — {FORMATTED_PRICE}
           </Button>

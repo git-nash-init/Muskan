@@ -6,8 +6,8 @@
   --color-canvas-base: #0a0a0a;
   --color-canvas-surface: #141414;
   --color-canvas-elevated: #1a1a1a;
-  --color-accent: #ff4925;
-  --color-accent-hover: #bd2608;
+  --color-accent: #6dee17;
+  --color-accent-hover: #58c710;
   --color-text-primary: #ffffff;
   --color-text-secondary: #cacaca;
   --color-text-muted: #8f8f8f;
@@ -26,8 +26,8 @@ body {
 
 /* Custom editorial selection */
 ::selection {
-  background-color: #ff4925;
-  color: #ffffff;
+  background-color: #6dee17;
+  color: #0a0a0a;
 }
 
 /* Typography Helpers */
@@ -61,7 +61,7 @@ body {
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff4925;
+  background: #6dee17;
 }
 
 /* Accessibility: Reduced motion overrides */

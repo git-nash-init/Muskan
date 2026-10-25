@@ -1,15 +1,15 @@
 /**
- * Central Configuration for NAYRA Official Website
+ * Central Configuration for MUSKAN Official Website
  * Single Source of Truth for Brand, Pricing, URLs, and Copy.
  */
 
-export const BRAND_NAME = 'NAYRA';
+export const BRAND_NAME = 'MUSKAN';
 export const SUBSCRIPTION_PRICE_INR = 499;
 export const CURRENCY_SYMBOL = '₹';
 export const FORMATTED_PRICE = `${CURRENCY_SYMBOL}${SUBSCRIPTION_PRICE_INR}`;
 
 export const SITE_METADATA = {
-  title: 'NAYRA — Unfiltered Moments & Private Telegram Access',
+  title: 'MUSKAN — Unfiltered Moments & Private Telegram Access',
   tagline: 'Unfiltered moments, personal stories, and private daily conversations.',
   shortBio: 'Creator & Model. Sharing raw behind-the-scenes moments, daily photosets, and private real-time chats.',
   heroHeadline: 'UNFILTERED MOMENTS. REAL CONNECTION.',
@@ -17,8 +17,8 @@ export const SITE_METADATA = {
   badgeText: 'ONLINE ON TELEGRAM',
   statusText: 'ACCEPTING NEW MEMBERS',
   ageNotice: '18+ Adults Only',
-  supportEmail: 'support@nayra.vip',
-  telegramHandle: '@nayra_official',
+  supportEmail: 'support@muskan.vip',
+  telegramHandle: '@muskan_official',
   pricing: {
     amount: SUBSCRIPTION_PRICE_INR,
     formatted: FORMATTED_PRICE,
@@ -40,7 +40,7 @@ export const MEMBERSHIP_INCLUSIONS = [
   'Full uninterrupted access to private Telegram channel',
   'Exclusive HD photo vault (100% uncompressed releases)',
   'Exclusive behind-the-scenes video reels and daily video updates',
-  'Real-time 1-on-1 personal replies and voice notes directly with Nayra',
+  'Real-time 1-on-1 personal replies and voice notes directly with Muskan',
   'Ad-free, spam-free, respectful private space',
   'Instant invite link delivery upon verification',
 ];
@@ -64,14 +64,14 @@ export const ACCESS_STEPS = [
   {
     step: '04',
     title: 'Start Chatting',
-    description: 'Join the conversation, explore the uncompressed archives, and chat with Nayra in real time.',
+    description: 'Join the conversation, explore the uncompressed archives, and chat with Muskan in real time.',
   },
 ];
 
 export const FAQS = [
   {
     question: 'What is included with the ₹499 Telegram access?',
-    answer: 'You receive instant access to Nayra’s private Telegram channel where she posts daily uncompressed photo sets, raw video reels, voice notes, and engages in real-time conversations with members.',
+    answer: 'You receive instant access to Muskan’s private Telegram channel where she posts daily uncompressed photo sets, raw video reels, voice notes, and engages in real-time conversations with members.',
   },
   {
     question: 'How do I receive my channel invite after payment?',
@@ -91,10 +91,10 @@ export const FAQS = [
   },
   {
     question: 'What if my payment is pending or fails?',
-    answer: 'If an amount is debited but your link is delayed, our support team can verify the transaction reference and manually deliver your channel invite within hours at support@nayra.vip.',
+    answer: 'If an amount is debited but your link is delayed, our support team can verify the transaction reference and manually deliver your channel invite within hours at support@muskan.vip.',
   },
   {
-    question: 'Can I chat with Nayra directly?',
-    answer: 'Yes! Nayra personally reads and replies to messages, answers questions, and shares voice notes in the private channel.',
+    question: 'Can I chat with Muskan directly?',
+    answer: 'Yes! Muskan personally reads and replies to messages, answers questions, and shares voice notes in the private channel.',
   },
 ];

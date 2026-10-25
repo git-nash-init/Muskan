@@ -55,7 +55,7 @@ export const Hero: React.FC<HeroProps> = ({ onJoinClick, onExploreVideos }) => {
                 size="lg"
                 onClick={onJoinClick}
                 icon={<ArrowUpRight className="w-4 h-4" />}
-                className="shadow-[0_0_30px_rgba(255,73,37,0.25)]"
+                className="shadow-[0_0_30px_rgba(109,238,23,0.3)]"
               >
                 Chat with me — {FORMATTED_PRICE}
               </Button>

@@ -55,11 +55,11 @@ export const PerksAccordion = () => {
       id: 'step-4',
       index: '04',
       title: 'Say Hello & Chat In Real Time',
-      subtitle: 'Connect personally with Nayra',
+      subtitle: 'Connect personally with Muskan',
       content: (
         <div className="space-y-3">
           <p>
-            Drop a message in the channel, introduce yourself, and react to daily posts. Nayra personally reads incoming messages and replies with personal text and voice notes throughout the week.
+            Drop a message in the channel, introduce yourself, and react to daily posts. Muskan personally reads incoming messages and replies with personal text and voice notes throughout the week.
           </p>
           <p className="text-xs text-muted-light font-mono">
             ✓ Respectful VIP community • Real human connection

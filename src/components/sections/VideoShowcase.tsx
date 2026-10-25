@@ -19,12 +19,12 @@ export const VideoShowcase = ({ onJoinClick }: VideoShowcaseProps) => {
               <span className="text-xs font-mono uppercase tracking-widest text-muted">
                 (VIDEO PREVIEWS)
               </span>
-              <span className="text-[#ff4925]">•</span>
-              <span className="text-xs font-mono text-[#ff4925] uppercase tracking-wider font-semibold">
+              <span className="text-[#6dee17]">•</span>
+              <span className="text-xs font-mono text-[#6dee17] uppercase tracking-wider font-semibold">
                 3 EXCLUSIVE REELS
               </span>
               <span className="text-white/30">•</span>
-              <span className="text-xs font-mono text-emerald-400 uppercase tracking-wider flex items-center gap-1">
+              <span className="text-xs font-mono text-[#6dee17] uppercase tracking-wider flex items-center gap-1 font-semibold">
                 <Volume2 className="w-3 h-3" /> AUDIO INCLUDED
               </span>
             </div>
@@ -34,7 +34,7 @@ export const VideoShowcase = ({ onJoinClick }: VideoShowcaseProps) => {
           </div>
 
           <p className="text-muted text-sm sm:text-base max-w-md font-normal leading-relaxed">
-            Direct video clips from Nayra's shoots, travels, and personal voice stories. Tap unmute anytime to listen to the audio, or join the channel for complete daily uncut videos.
+            Direct video clips from Muskan's shoots, travels, and personal voice stories. Tap unmute anytime to listen to the audio, or join the channel for complete daily uncut videos.
           </p>
         </div>
 
@@ -56,7 +56,7 @@ export const VideoShowcase = ({ onJoinClick }: VideoShowcaseProps) => {
                   <h3 className="text-base sm:text-lg font-semibold text-white truncate">
                     {video.title}
                   </h3>
-                  <span className="shrink-0 text-xs font-mono text-[#ff4925] uppercase tracking-wider font-bold">
+                  <span className="shrink-0 text-xs font-mono text-[#6dee17] uppercase tracking-wider font-bold">
                     {video.category}
                   </span>
                 </div>
@@ -74,11 +74,11 @@ export const VideoShowcase = ({ onJoinClick }: VideoShowcaseProps) => {
         <div className="mt-16 p-6 sm:p-8 rounded-2xl bg-canvas-surface border border-hairline max-w-3xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
           <div className="space-y-1">
             <h4 className="text-lg font-semibold text-white flex items-center justify-center sm:justify-start gap-2">
-              <Sparkles className="w-4 h-4 text-[#ff4925]" />
+              <Sparkles className="w-4 h-4 text-[#6dee17]" />
               Want the full daily video feed?
             </h4>
             <p className="text-xs sm:text-sm text-muted">
-              Get instant access to Nayra’s private Telegram channel archive for {FORMATTED_PRICE}.
+              Get instant access to Muskan’s private Telegram channel archive for {FORMATTED_PRICE}.
             </p>
           </div>
 

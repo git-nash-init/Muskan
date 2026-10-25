@@ -13,7 +13,7 @@ export const CreatorNote: React.FC<CreatorNoteProps> = ({ onJoinClick }) => {
     <section className="py-20 sm:py-32 bg-canvas-base border-b border-hairline relative overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          {/* Left Column: Intimate Letter from Nayra */}
+          {/* Left Column: Intimate Letter from Muskan */}
           <div className="lg:col-span-7 flex flex-col justify-between space-y-8">
             <div className="space-y-4">
               <span className="text-xs font-mono uppercase tracking-widest text-muted flex items-center gap-2">
@@ -58,12 +58,12 @@ export const CreatorNote: React.FC<CreatorNoteProps> = ({ onJoinClick }) => {
             </div>
           </div>
 
-          {/* Right Column: Large Featured Portrait of Nayra */}
+          {/* Right Column: Large Featured Portrait of Muskan */}
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-2xl overflow-hidden bg-canvas-surface border border-hairline shadow-2xl group">
               <img
                 src={HERO_MEDIA.about.src}
-                alt="Nayra in cozy white knit, natural and approachable"
+                alt="Muskan natural and approachable portrait"
                 loading="lazy"
                 className="w-full h-[450px] sm:h-[550px] object-cover object-top transition-transform duration-700 group-hover:scale-105"
               />

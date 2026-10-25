@@ -71,7 +71,7 @@ export const VideoPlayer = ({
 
   return (
     <div
-      className={`relative group rounded-2xl overflow-hidden bg-canvas-surface border border-hairline transition-all duration-500 hover:border-white/30 hover:shadow-2xl hover:shadow-[#ff4925]/10 ${className}`}
+      className={`relative group rounded-2xl overflow-hidden bg-canvas-surface border border-hairline transition-all duration-500 hover:border-white/30 hover:shadow-2xl hover:shadow-[#6dee17]/10 ${className}`}
       style={{ aspectRatio }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -106,7 +106,7 @@ export const VideoPlayer = ({
           )}
 
           {hasAudio && (
-            <span className="flex items-center gap-1 text-[10px] font-mono tracking-wider uppercase px-2 py-0.5 rounded-full bg-[#ff4925]/90 text-white font-bold shadow-sm animate-pulse">
+            <span className="flex items-center gap-1 text-[10px] font-mono tracking-wider uppercase px-2 py-0.5 rounded-full bg-[#6dee17] text-black font-bold shadow-sm animate-pulse">
               <Music className="w-2.5 h-2.5" />
               <span>SOUND</span>
             </span>
@@ -119,22 +119,22 @@ export const VideoPlayer = ({
           onClick={toggleMute}
           className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full backdrop-blur-md border transition-all duration-300 text-xs font-mono font-medium focus:outline-none cursor-pointer shadow-lg ${
             isMuted
-              ? 'bg-black/80 hover:bg-[#ff4925] text-white border-white/30 hover:border-[#ff4925] hover:text-white'
-              : 'bg-emerald-500/90 hover:bg-emerald-600 text-white border-emerald-400 font-bold'
+              ? 'bg-black/80 hover:bg-[#6dee17] text-white border-white/30 hover:border-[#6dee17] hover:text-black font-bold'
+              : 'bg-[#6dee17] hover:bg-[#58c710] text-black border-[#6dee17] font-bold shadow-[0_0_15px_rgba(109,238,23,0.4)]'
           }`}
           title={isMuted ? 'Unmute video audio' : 'Mute video audio'}
           aria-label={isMuted ? 'Unmute video audio' : 'Mute video audio'}
         >
           {isMuted ? (
             <>
-              <VolumeX className="w-3.5 h-3.5 text-[#ff4925] group-hover:text-white" />
+              <VolumeX className="w-3.5 h-3.5 text-[#6dee17] group-hover:text-black" />
               <span className="text-[10px] sm:text-[11px] uppercase tracking-wider font-semibold">
                 {hasAudio ? 'UNMUTE AUDIO' : 'UNMUTE'}
               </span>
             </>
           ) : (
             <>
-              <Volume2 className="w-3.5 h-3.5 text-white animate-bounce" />
+              <Volume2 className="w-3.5 h-3.5 text-black animate-bounce" />
               <span className="text-[10px] sm:text-[11px] uppercase tracking-wider font-bold">
                 SOUND ON
               </span>
@@ -150,7 +150,7 @@ export const VideoPlayer = ({
             {isPlaying ? (
               <Pause className="w-6 h-6 fill-current text-white/90" />
             ) : (
-              <Play className="w-6 h-6 fill-current translate-x-0.5 text-[#ff4925]" />
+              <Play className="w-6 h-6 fill-current translate-x-0.5 text-[#6dee17]" />
             )}
           </div>
         </div>
@@ -160,10 +160,10 @@ export const VideoPlayer = ({
       {hasAudio && isMuted && (
         <div
           onClick={toggleMute}
-          className="absolute inset-x-4 bottom-16 sm:bottom-18 z-10 cursor-pointer bg-black/75 hover:bg-[#ff4925]/90 backdrop-blur-md border border-[#ff4925]/40 hover:border-white/40 p-2.5 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 shadow-xl group/btn"
+          className="absolute inset-x-4 bottom-16 sm:bottom-18 z-10 cursor-pointer bg-black/85 hover:bg-[#6dee17] backdrop-blur-md border border-[#6dee17]/50 hover:border-white/40 p-2.5 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 shadow-xl group/btn"
         >
-          <Volume2 className="w-4 h-4 text-[#ff4925] group-hover/btn:text-white transition-colors" />
-          <span className="text-white text-xs font-mono tracking-wider uppercase font-semibold">
+          <Volume2 className="w-4 h-4 text-[#6dee17] group-hover/btn:text-black transition-colors" />
+          <span className="text-white group-hover/btn:text-black text-xs font-mono tracking-wider uppercase font-bold">
             TAP HERE TO UNMUTE AUDIO 🔊
           </span>
         </div>
@@ -176,7 +176,7 @@ export const VideoPlayer = ({
             {title}
           </p>
           <div className="flex items-center gap-2 mt-1">
-            <span className="w-2 h-2 rounded-full bg-[#ff4925] animate-pulse" />
+            <span className="w-2 h-2 rounded-full bg-[#6dee17] animate-pulse" />
             <span className="text-[10px] sm:text-[11px] uppercase tracking-wider text-white/70 font-mono">
               {hasAudio ? 'Exclusive Sound Reel' : 'Exclusive Preview'}
             </span>
